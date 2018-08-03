@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 315px;
+			height: 318px;
+			border: 1px solid #f10215;
+			position: relative;
+			margin: 20px auto;
+		}
+
+		.container .back {
+			width: 228px;
+			height: 228px;
+			position: absolute;
+			top: 50%; /*在垂直方向上往下走父元素高度的一半*/
+			margin-top: -114px; /*子元素往回走自己高度的一半*/
+			left: 50%; /*在水平方向往右走父元素宽度的一半*/
+			margin-left: -114px; /*子元素往回走自己宽度的一半*/
+		}
+
+		.container .logo {
+			position: absolute;
+			left: 1px;
+			top: 1px;
+		}
+
+		.container .price {
+			font: normal bold 24px "Microsoft Yahei";
+			color: #f10215;
+			position: absolute;
+			left: 15px;
+			bottom: 25px;
+		}
+
+		.container .index {
+			font: normal bold 16px "Microsoft Yahei";
+			color: #f10215;
+			position: absolute;
+			right: 40px;
+			bottom: 25px;
+			border: 1px solid #f10215;
+		}
+
+		.container .ads {
+			font-size: 10px;
+			color: lightgrey;
+			border: 1px solid lightgrey;
+			position: absolute;
+			right: 1px;
+			bottom: 25px;
+			text-decoration: none;
+		}
+
+		.container .ads2 {
+			font-size: 12px;
+			color: white;
+			background-color: rgba(105, 105, 105, 0.6);
+			border-top-right-radius: 10px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			text-decoration: none;
+		}
+		
+		.container .space {
+			display: inline-block;
+			width: 10px;
+			height: 20px;
+			color: #f10215;
+			font-size: 18px;
+			position: absolute;
+			top: 50%;
+			margin-top: -10px;
+		}
+
+		.container .left {
+			left: 5px;
+		}
+
+		.container .right {
+			right: 5px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<img class="back" src="./img/back2.jpg">
+
+		<img class="logo" src="./img/logo.gif">
+		
+		<p class="price">￥2999</p>
+
+		<p class="index">3/8</p>
+
+		<a class="ads" href="#">广告</a>
+
+		<a class="ads2" href="#">广告</a>
+
+		<span class="left space"> &lt; </span>
+		<span class="right space"> &gt; </span>
+
+	</div>
+</body>
+</html>

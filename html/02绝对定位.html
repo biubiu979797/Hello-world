@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		div {
+			width: 100px;
+			height: 100px;
+		}
+
+		div:first-child {
+			background-color: lightgreen;
+			position: absolute; 
+			/*绝对定位，会脱离文档流的控制，原先的位置会被其他元素占有，相对父元素来移动位置，如果没有父元素，那么相对整个网页*/
+			margin: 50px;
+			left: 50px;
+			top: 30px;
+		}
+
+		div:nth-child(2) {
+			width: 200px;
+			height: 200px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+
+	<div></div>
+	<div></div>
+	
+</body>
+</html>

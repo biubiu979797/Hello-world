@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.fu {
+			width: 200px;
+			height: 200px;
+			padding: 20px;
+			margin: 50px;
+			background-color: lightgreen;
+		}
+
+		.zi {
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+			position: absolute; /*父元素没有定位时，子元素移动时相对body来移动*/
+			left: 50px;
+			top: 30px;
+		}
+
+
+		.father {
+			width: 200px;
+			height: 200px;
+			background-color: lightpink;
+			position: absolute;
+			margin: 20px;
+		}
+		.son {
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+			position: absolute; /*父亲有定位时，子元素在移动位置时依照父元素来移动*/
+			left: 20px;
+			top: 30px;
+		}
+
+		.other {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+	
+
+	<div class="fu"> 父元素
+		<div class="zi">子元素</div>
+	</div>
+
+	<div class="father">
+		<div class="son"></div>
+	</div>
+
+	<!-- 由于上一个div使用了绝对定位，那么该div的位置就被占用 -->
+	<div class="other"></div>
+	
+</body>
+</html>
